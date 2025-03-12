@@ -40,6 +40,10 @@
         --logo-size-large: 65px;
         --logo-size-small: 40px;
     }
+
+    *:hover {
+        all: unset !important;
+      }
 }
 
 body {
