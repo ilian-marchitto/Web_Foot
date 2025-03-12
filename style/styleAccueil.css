@@ -159,10 +159,7 @@ nav a img:hover{
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
     background-color: var(--background-color-nav);
     gap: 10px;
     padding: 50px;
