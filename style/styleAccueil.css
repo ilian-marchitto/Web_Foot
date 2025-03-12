@@ -136,6 +136,7 @@ nav a img:hover{
     gap: 50px;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .maillot {
@@ -143,11 +144,11 @@ nav a img:hover{
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    margin: 10px 0 100px 0;
     max-width: 300px;
 }
 
 .maillot img {
+    border-radius: 5px;
     width: 100%;
     background-color: var(--background-maillot);
 }
