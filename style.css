@@ -30,14 +30,14 @@
 @media (max-width: 840px) {
     :root {
         --font-size-large: 25px;
-        --font-size-medium: 15px;
+        --font-size-medium: 10px;
         --font-size-small: 8px;
 
         --gap-large: 40px;
         --gap-medium: 12px; 
         --gap-small: 3px;
 
-        --logo-size-large: 65px;
+        --logo-size-large: 55px;
         --logo-size-small: 40px;
     }
 }
