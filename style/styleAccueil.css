@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: var(--font-size-large);
+}
 .test {
     position: sticky;
     top:0;
@@ -27,6 +34,11 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); } /* On déplace la moitié du conteneur */
   }
+
+a {
+    text-decoration: none;
+    color: var(--couleur-texte)
+}
 
 nav {
     width: 100%;
@@ -61,6 +73,7 @@ nav a img {
 nav a img:hover{
     transform: scale(1.1);
 }
+
 
 .offre-section {
     background-image: url("../media/image/fondOffre.png");
@@ -102,5 +115,71 @@ nav a img:hover{
     background-color: var(--background-color-nav-hover);
 }
 
+.titre {
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-small);
+    margin: 30px;
+    scroll-margin-top: 40vh;
+}
 
-  
+.titre img {
+    width: var(--font-size-large);
+    height: auto;
+}
+
+.conteneur {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.maillot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0 100px 0;
+    max-width: 300px;
+}
+
+.maillot img {
+    width: 100%;
+    background-color: var(--background-maillot);
+}
+
+.maillot:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color-nav);
+    gap: 10px;
+    padding: 50px;
+}
+
+footer h4 {
+    font-size: var(--font-size-medium);
+}
+
+footer ul {
+    font-size: var(--font-size-small);
+    list-style: none;
+}
+
+footer ul li a:hover{
+    transform: scale(1.1);
+}
+
+#accueil {
+    scroll-margin-top: 100vh;
+}

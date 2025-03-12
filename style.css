@@ -10,6 +10,7 @@
     --background-color: #D3D3D3;
     --background-color-nav: #858585;
     --background-color-nav-hover: #585858;
+    --background-maillot: #acacac;
     --couleur-texte: #2E2E2E;
     --details-icon: #F5F5DC ;
     --couleur-fond-section: #5F79B5 ;
@@ -26,7 +27,7 @@
     --logo-size-small: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     :root {
         --font-size-large: 25px;
         --font-size-medium: 15px;
