@@ -41,8 +41,11 @@
         --logo-size-small: 40px;
     }
 
-    *:hover {
-        all: unset !important;
+    * {
+        pointer-events: auto; /* Rétablit le comportement par défaut */
+      }
+      *:hover {
+        pointer-events: none !important; /* Désactive les effets de hover */
       }
 }
 
