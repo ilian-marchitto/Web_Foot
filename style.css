@@ -40,14 +40,16 @@
         --logo-size-large: 65px;
         --logo-size-small: 40px;
     }
-
-    * {
-        pointer-events: auto; /* Rétablit le comportement par défaut */
-      }
-      *:hover {
-        pointer-events: none !important; /* Désactive les effets de hover */
-      }
 }
+
+@media (hover: none) {
+    * {
+      pointer-events: auto; /* Rétablit le comportement par défaut */
+    }
+    *:hover {
+      pointer-events: none !important; /* Désactive les effets de hover */
+    }
+  }
 
 body {
     color: var(--couleur-texte);
