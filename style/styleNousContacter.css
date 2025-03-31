@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+h1 {
+    color: var(--couleur-texte);
+}
+
+.form-header {
+    width: 100%;
+    margin-top: var(--gap-small);
+    margin-bottom: var(--gap-medium);
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    font-size: var(--font-size-medium);
+}
+
+.form-header .logo-right {
+    width: var(--logo-size-small);
+}
+
+.form-header .logo-left {
+    width: var(--logo-size-small);
+}
+
+.form-wrapper {
+    margin: var(--margin-form-wrapper);
+    padding: var(--gap-medium);
+    width: 100%;
+    height: auto;
+    background-color: var(--couleur-principale);
+    border-radius: 10px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+label span {
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: var(--background-color-nav);
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--background-color-nav-hover);
+}
