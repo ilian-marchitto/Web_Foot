@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/image/logo.PNG" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panier</title>
+    <link rel="stylesheet" href="../style/styleAccueil.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style/styleNousContacter.css">
-    <title>Nous Contacter</title>
+    <link rel="stylesheet" href="../style/panier.css">
 </head>
 <body>
     <div class="test">
@@ -62,59 +62,47 @@
             <a href="../pages/nous-contacter.html">Contact</a>
         </nav>
     </div>
-    <main>
-        <div class="form-wrapper">
-            <div class="form-header">
-                <img src="../media/image/logo.PNG" alt="FootJersey" class="logo-left">
-                <h1>Nous Contacter !</h1>
-                <img src="../media/image/logo.PNG" alt="FootJersey" class="logo-right">
-            </div>
-            <form action="mailto:footJersey@gmail.com" method="post" enctype="text/plain">
-                <label for="nom">Nom<span>*</span></label>
-                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+    <div class="cart-container">
+        <h1>🛒 Mon Panier</h1>
 
+        <table class="cart-table">
+        <thead>
+            <tr>
+            <th>Produit</th>
+            <th>Nom</th>
+            <th>Prix unitaire</th>
+            <th>Quantité</th>
+            <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><img src="https://via.placeholder.com/80x80.png?text=Maillot" alt="Maillot"></td>
+            <td>Maillot FC Étoile 2025</td>
+            <td>79,99€</td>
+            <td>1</td>
+            <td>79,99€</td>
+            </tr>
+            <tr>
+            <td><img src="https://via.placeholder.com/80x80.png?text=Short" alt="Short"></td>
+            <td>Short Officiel</td>
+            <td>39,99€</td>
+            <td>2</td>
+            <td>79,98€</td>
+            </tr>
+        </tbody>
+        </table>
 
-                <label for="prenom">Prénom<span>*</span></label>
-                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
-
-
-                <label for="email">Adresse Mail<span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
-
-
-                <label for="pays">Pays</label>
-                <select id="pays" name="pays">
-                    <option value="france">France</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="canada">Canada</option>
-                </select>
-
-
-                <label>Sexe<span>*</span></label>
-                <div class="radio-group">
-                    <div>
-                    <input type="radio" id="homme" name="sexe" value="homme" required>
-                    <label for="homme">Homme</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="femme" name="sexe" value="femme" required>
-                    <label for="femme">Femme</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="autre" name="sexe" value="autre" required>
-                    <label for="autre">Autre</label>
-                    </div>
-                </div>
-
-                <label for="telephone">Téléphone<span>*</span></label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro" required>
-
-                <button type="submit">Envoyer</button>
-            </form>
+        <div class="cart-summary">
+        <p>Total général : <strong>159,97€</strong></p>
+        <button class="checkout-button">Valider la commande ✅</button>
         </div>
-    </main>
+    </div>
+    <footer>
+        <h4>Site Etudiant developpé par<br> Wallace Verron et Melisa Yilmaz</h4>
+        <ul>
+            <li><a href="./pages/credits.html">Mentions Légales</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

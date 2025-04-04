@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/image/logo.PNG" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiche Produit - Maillot</title>
+    <link rel="stylesheet" href="../style/fiche-produit.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style/styleNousContacter.css">
-    <title>Nous Contacter</title>
+    <link rel="stylesheet" href="../style/styleAccueil.css">
 </head>
 <body>
     <div class="test">
@@ -63,58 +63,39 @@
         </nav>
     </div>
     <main>
-        <div class="form-wrapper">
-            <div class="form-header">
-                <img src="../media/image/logo.PNG" alt="FootJersey" class="logo-left">
-                <h1>Nous Contacter !</h1>
-                <img src="../media/image/logo.PNG" alt="FootJersey" class="logo-right">
+        <div class="product-image">
+        <img src="../media/image/maillot/maillotAllemagne.png" alt="Maillot Officiel">
+        </div>
+
+        <div class="product-details">
+        <h1>Maillot Officiel 2025 - FC Étoile</h1>
+        <p class="description">
+            Découvre le nouveau maillot domicile du FC Étoile saison 2025 !  
+            Tissu respirant, coupe ajustée et design moderne.  
+            Parfait pour les fans et les joueurs.
+        </p>
+
+        <p class="price">Prix : <strong>79,99€</strong></p>
+
+        <div class="sizes">
+            <p>Tailles disponibles :</p>
+            <div class="size-options">
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+            <span>XXL</span>
             </div>
-            <form action="mailto:footJersey@gmail.com" method="post" enctype="text/plain">
-                <label for="nom">Nom<span>*</span></label>
-                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+        </div>
 
-
-                <label for="prenom">Prénom<span>*</span></label>
-                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
-
-
-                <label for="email">Adresse Mail<span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
-
-
-                <label for="pays">Pays</label>
-                <select id="pays" name="pays">
-                    <option value="france">France</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="canada">Canada</option>
-                </select>
-
-
-                <label>Sexe<span>*</span></label>
-                <div class="radio-group">
-                    <div>
-                    <input type="radio" id="homme" name="sexe" value="homme" required>
-                    <label for="homme">Homme</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="femme" name="sexe" value="femme" required>
-                    <label for="femme">Femme</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="autre" name="sexe" value="autre" required>
-                    <label for="autre">Autre</label>
-                    </div>
-                </div>
-
-                <label for="telephone">Téléphone<span>*</span></label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro" required>
-
-                <button type="submit">Envoyer</button>
-            </form>
+        <button class="add-to-cart">Ajouter au panier 🛒</button>
         </div>
     </main>
+    <footer>
+        <h4>Site Etudiant developpé par<br> Wallace Verron et Melisa Yilmaz</h4>
+        <ul>
+            <li><a href="./pages/credits.html">Mentions Légales</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
